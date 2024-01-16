@@ -8,10 +8,19 @@ This repository contains code examples and explanations for topics related to sy
 In JavaScript, synchronous code is executed in sequence - each statement waits for the previous statement to finish. Asynchronous code, on the other hand, allows multiple things to happen at the same time.
 
 ## Promises
-
+new Promise(executor);
+new Promise(function(resolve, reject) { ... });
+![](./image.png)
 Promises are used to handle asynchronous operations in JavaScript. They are a cleaner way to handle callbacks. A promise represents a value (or the reason it’s not available) that may be available now, or in the future, or never.
 
 ## Try/Catch
+try {
+  // сервер вернёт 404
+  const response = await fetch('https://restcountries.com/v4.1/all')
+  console.log('Success')
+} catch {
+  console.error('Failed')
+}
 
 The try...catch statement marks a block of statements to try, and specifies a response should an exception be thrown.
 
@@ -34,7 +43,7 @@ async function fetchData() {
 ## Fetch/Request
 
 The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses. It also provides a global fetch() method that provides an easy, logical way to fetch resources asynchronously across the network.
-
+![](image-1.png)
 Example:
 fetch('https://api.example.com/data')
   .then(response => response.json())
