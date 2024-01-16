@@ -1,0 +1,19 @@
+.wert{
+    color: blue;
+    font-size: 16px;
+}
+.box{
+   
+
+}
+img{
+    width: 60px; height:60px;
+    border-radius: 30px;
+}
+.sec{
+    width: 150px;
+    height: 200px;
+    background-color: aqua;
+    font-size: 12px;
+}
+
