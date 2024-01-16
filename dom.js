@@ -24,3 +24,4 @@ function get(data) {
     box1.appendChild(div);
   });
 }
+ 
